@@ -8,17 +8,21 @@ import EditSchedule from './Components/EditSchedule';
 
 function App() {
   return (
-    <div className="container">
-      <div className="jumbotron bg-dark text-light text-center">
-        <h1>My Schedule</h1>
+    <div className="main">
+      <div className="header">
+        <h1>ScheduleKeeper</h1>
       </div>
-      <Link className="btn btn-outline-info" to="/">Schedule</Link>
-      <Link className="btn btn-outline-info" to="/new">New Activity</Link>
-      <Router className="my-5">
-        <Display path="/" />
-        <ScheduleForm path="/new" />
-        <EditSchedule path="/edit/:_id" />
-      </Router>
+      <div className="container">
+        <div className="navbar">
+          <Link className="navbtn" to="/">My Schedule</Link>
+          <Link className="navbtn" to="/new">Add Activity</Link>
+        </div>
+        <Router className="my-5">
+          <Display path="/" />
+          <ScheduleForm path="/new" />
+          <EditSchedule path="/edit/:_id" />
+        </Router>
+      </div>
     </div>
   );
 }

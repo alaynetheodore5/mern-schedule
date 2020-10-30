@@ -1,0 +1,64 @@
+.navbtn {
+    font-family: 'Raleway', sans-serif;
+    color: #C0C9CC;
+}
+
+.navbtn:hover {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.an_activity {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fbfbfb;
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    
+}
+
+.an_activity .activity_title{
+    font-family: 'Rock Salt', cursive;
+    padding: 5px;
+}
+
+.an_activity p{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.header {
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Rock Salt', cursive;
+    /* height:25%; */
+    background-color: #F2F1F0;
+    color: #C0C9CC;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.all_activities {
+    display: inline-block;
+    vertical-align: top;
+    width: 930px;
+}
+
+.body {
+    background-color: #fbfbfb;
+    height: 200px;
+}
+
+.addbtn, .deletebtn {
+    font-family: 'Raleway', sans-serif;
+}
+
+.add_activity, .edit_activity {
+    font-family: 'Raleway', sans-serif;
+}

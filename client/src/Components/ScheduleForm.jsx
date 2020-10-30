@@ -26,33 +26,33 @@ const ScheduleForm = props => {
 
     return (
         <div className="row">
-            <form className="col-sm-8 offset-sm-2" onSubmit={CreateSchedule}>
+            <form className="col-sm-8 offset-sm-2 add_activity" onSubmit={CreateSchedule}>
                 <div className="form-group">
-                    <label>Activity</label>
+                    <label>Name your activity:</label>
                     <input type="text" className="form-control" onChange={e => setActivity(e.target.value)} />
                     {errors.activity ? <p className="text-danger">{errors.activity.properties.message}</p>: "" }
                 </div>
                 <div className="form-group">
-                    <label>Description</label>
+                    <label>Write a short description:</label>
                     <textarea className="form-control" onChange={e => setDescription(e.target.value)}></textarea>
                     {errors.description ? <p className="text-danger">{errors.description.properties.message}</p>: "" }
                 </div>
                 <div className="form-group">
-                    <label>Start</label>
+                    <label>Start:</label>
                     <input type="datetime-local" className="form-control" onChange={e => setStart(e.target.value)}/>
                     {errors.start ? <p className="text-danger">{errors.start.properties.message}</p>: "" }
                 </div>
                 <div className="row">
                     <div className="col-sm-6">
                         <div className="form-group">
-                            <label>Duration</label>
+                            <label>Duration:</label>
                             <input type="number" className="form-control" onChange={e => setDuration(e.target.value)} value={duration}/>
                             {errors.duration ? <p className="text-danger">{errors.duration.properties.message}</p>: "" }
                         </div>
                     </div>
                     <div className="col-sm-6">
                         <div className="form-group">
-                            <label>Units</label>
+                            <label>Units:</label>
                             <select type="option" className="form-control" onChange={e => setUnits(e.target.value)}>
                                 <option>minutes</option>
                                 <option>hours</option>
@@ -61,7 +61,7 @@ const ScheduleForm = props => {
                         </div>
                     </div>
                 </div>
-                <input type="submit" className="btn btn-warning btn-block" value="Add to Schedule" />
+                <input type="submit" className="btn btn-dark btn-block addbtn" value="Add to Schedule" />
             </form>
         </div>
     )
