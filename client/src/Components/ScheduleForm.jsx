@@ -54,9 +54,9 @@ const ScheduleForm = props => {
                         <div className="form-group">
                             <label>Units:</label>
                             <select type="option" className="form-control" onChange={e => setUnits(e.target.value)}>
-                                <option>minutes</option>
-                                <option>hours</option>
-                                <option>days</option>
+                                <option>minute(s)</option>
+                                <option>hour(s)</option>
+                                <option>day(s)</option>
                             </select>
                         </div>
                     </div>
